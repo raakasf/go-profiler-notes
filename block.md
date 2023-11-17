@@ -1,5 +1,7 @@
 ⬅ [Index of all go-profiler-notes](./README.md)
 
+⚠ This page is deprecated in favor of the block profiler section in the [The Busy Developer's Guide to Go Profiling, Tracing and Observability](./guide/README.md#block-profiler).
+
 [Description](#description) - [Usage](#usage) - [Overhead](#overhead) - [Accuracy](#accuracy) - [Relationship with Mutex Profiling](#relationship-with-mutex-profiling) - [Profiler Labels](#profiler-labels) - [History](#history)
 
 This document was last updated for `go1.15.7` but probably still applies to older/newer versions for the most parts.
@@ -164,7 +166,7 @@ Below is an example of block profile encoded in [pprof's protobuf format](./ppro
 - contentions/count
 - delay/nanoseconds
 
-The `blockprofilerate` used to create the profile is not included, neither are [profiler labels](./profiler-labels).
+The `blockprofilerate` used to create the profile is not included, neither are profiler labels.
 
 ```
 $ go tool pprof -raw block.pb.gz 
